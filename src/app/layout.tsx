@@ -33,7 +33,10 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       dir="rtl"
       className={`${vazirmatn.variable} ${baloo.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col font-fa">{children}</body>
+      <body
+        suppressHydrationWarning
+        className="min-h-full flex flex-col font-fa"
+      >{children}</body>
     </html>
   );
 }
